@@ -16,4 +16,4 @@ thinkercad.png: Imagem do circuito que faz o led externo piscar com os jumpers e
 
 Ir além: Giroflex.png
 
-Construi o sistema físico como dois leds piscando de forma sequencial de maneira que simule um giroflex policial. 
+Construi o sistema físico no protoboard como dois leds piscando de forma sequencial de maneira que simule um giroflex policial. 
