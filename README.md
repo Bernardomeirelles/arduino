@@ -10,11 +10,43 @@ Nesta primeira parte, o código faz o LED interno do Arduino (embutido na placa)
 <img src="./arduino_IDE.png" alt="LED Interno" width="900"/>
 
 ### Parte 2: Pisca-Pisca com LED Externo
+
 Na segunda parte, o LED externo é conectado através de um circuito com jumpers e resistores de 330 Ohms. O LED pisca de acordo com o código implementado, simulando um giroflex.
+
+[Link para o projeto no Tinkercad](https://www.tinkercad.com/things/09GLeNYcB4M-cool-albar?sharecode=G1Gp1OpqpWnm4ci0B3Ww3iCjPUBOY7L6I1wRaoB7TMo)
 
 <img src="./thinkercad.png" alt="Circuito no Tinkercad" width="900"/>
 
-### Extra: Sistema Físico - Giroflex Simulado
+
+##### Ambos os Leds piscam a cda 1000ms
+
+#### Demonstração 
+
+
+<img src="./demo.png" alt="Circuito no Tinkercad" width="900"/>
+
+#### Código em C++ do LED Externo e Interno 
+
+```cpp
+void setup()
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
+```
+
+
+
+
+### Ir Além: Sistema Físico - Giroflex Simulado
+
 Além do projeto no Tinkercad, foi construído um sistema físico com dois LEDs piscando de forma alternada para simular o efeito de um giroflex policial.
 
 <img src="./giroflex.jpeg" alt="Giroflex Simulado" width="900"/>
